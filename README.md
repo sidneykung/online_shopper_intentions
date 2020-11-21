@@ -1,5 +1,7 @@
 # E-commerce Customer Purchase Intentions
 
+**Please note that this repository is incomplete and requires revision.**
+
 ## Repository Contents
 
 - `notebooks`: folder containing draft notebooks with modeling process
