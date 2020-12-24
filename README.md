@@ -1,6 +1,8 @@
-# E-commerce Customer Purchase Intentions
+# Online Shopper Purchase Intentions
 
-**Please note that this repository is incomplete and requires revision.**
+```diff
+Please note that this repository is incomplete and requires revision.
+```
 
 ## Repository Contents
 
@@ -52,7 +54,7 @@ The research study gathered data from each session of website traffic over the 1
 | **Informational_Duration** | Duration in Informational Page |
 | **ProductRelated** | Product Related Page Value |
 | **ProductRelated_Duration** | Duration in Product Related Page |
-| **BounceRates** | Visitors who enter the site from that page and leave without visiting any other pages. |
+| **BounceRates** | Visitors who enter the site from that page and leave withrrrrrr visiting any other pages. |
 | **ExitRates** | Calculated with all page views before exiting the website. |
 | **PageValues** | Average value for a web page that a user visited before completeing an e-commerce transaction. |
 | **SpecialDay** | Promximity to site visit to specific special day (e.g. Mother's Day, Valentine's Day) in which the sessions are more likely to be finalized with transaction. |
@@ -83,7 +85,7 @@ The research study gathered data from each session of website traffic over the 1
 
 ![metrics](/visualizations/final_metrics.png)
 
-Our final model will be the Decision Tree with `max_depth=3` and `class_weight=balanced`. Even though it had a worse recall the the RFECV model, this one is not as overfit. Therefore, it is ideal for testing on unseen data.
+The final model will be the Decision Tree with `max_depth=3` and `class_weight=balanced`. Even though it had a worse recall the the RFECV model, this one is not as overfit. Therefore, it is ideal for testing on unseen data.
 
 We tried performing grid search with cross validation to optimize other hyperparameters, but they perform almost exactly the same as this model.
 
