@@ -76,51 +76,28 @@ The final model will be the Decision Tree with `max_depth=3` and `class_weight=b
 We tried performing grid search with cross validation to optimize other hyperparameters, but they perform almost exactly the same as this model.
 
 ## Next Steps
-- Collect more data, but include a legend for categorical variables to promote interpretability.
-- Webscrape similar data from other e-commerce stores within the industry to see how the model performs with that blind data.
-- A/B Testing the web design of the prominence of Adminisrative and Informational page links to increase length of user session.
+1. Collect more data, but include a legend for categorical variables to promote interpretability.
+2. Webscrape similar data from other e-commerce stores within the industry to see how the model performs with that blind data.
+3. A/B Testing the web design of the prominence of Administrative and Informational page links to increase length of user session.
 
 ## Repository Contents
 
-- `notebooks`: folder containing draft notebooks with modeling process
-    - `d_tree_model.ipynb`: draft notebook for decision tree and random forest model iteration
-    - `log_reg_model-BASELINE & BALANCED.ipynb`: draft notebook for baseline & balanced logistic regression model iterations
-    - `log_reg_model-SMOTE.ipynb`: draft notebook for logistic regression model using SMOTE for class imbalance
-- `visualizations`: folder containing all visualzations generated in `eda_notebook.ipynb`
-- `.ipynb_checkpoints`: folder containing Jupyter Notebook checkpoints, can disregard
-- `eda_notebook.ipynb`: notebook with exploratory data analysis (EDA) process
-- `business_insights`: notebook with final visualizations that answer the business problems
-- `final_model.ipynb`: notebook with modeling process for final model that recieved the highest evaluation metric
-- `online_shoppers_intention.csv`: .csv file with original research data from UCI
-- `model_data.csv`: .csv file with data cleaned within `eda_notebook.ipynb`
-- `presentation.pdf`: .pdf wil project presentation
-- `README.md`: markdown file to display README on repository
-
 ```bash
 .
+├── EDA                                # contains EDA process
+├── data                               # contains data files
 ├── models                             # contains model iterations
-├── pickle                             # contains cleaned data
-│   └── final_linear_SVM.pkl           # pickled final model
-├── preprocessing                      # contains all data preperation iterations and EDA notebooks
-│   ├── data_cleaning.ipynb            # raw data cleaning notebook
-│   ├── eda_notebook.ipynb             # exploratory data analysis notebook
-│   └── nlp_preprocessing.ipynb        # feature engineering notebook
-├── src                                # source folder
-│   └── twitter_data.csv               # raw dataset
 ├── visualizations                     # contains visualizations and local images
 ├── README.md                          # public-facing preview
-├── final_notebook.ipynb               # final version of EDA, feature engineering and modeling process
-├── presentation.pdf                   # slide deck
-└── web_app.py                         # interactive dashboard to host project
-
+├── business_insights.ipynb            # notebook with final visualizations that answer the business problems
+├── final_model.ipynb                  # notebook with iteration process for final model
+└── presentation.pdf                   # slide deck
 
 ```
 
 ## For More Information
 
-- See the [full project overview](https://github.com/sidneykung/twitter_hate_speech_detection/blob/master/final_notebook.ipynb) in the `final_notebook.ipynb` Jupyter Notebook.
-
-- For additional information or suggestions, contact Sidney Kung at [sidneyjkung@gmail.com](mailto:sidneyjkung@gmail.com)
+- Contact Sidney Kung at [sidneyjkung@gmail.com](mailto:sidneyjkung@gmail.com)
 
 **Let's connect!**
 
