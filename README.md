@@ -4,7 +4,7 @@
 Please note that this repository is incomplete and requires revision.
 ```
 
-![banner](./visualizations/banner.png)
+![banner](./visualizations/banner.jpg)
 
 ## Overview
 
