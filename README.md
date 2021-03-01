@@ -3,29 +3,14 @@
 ```diff
 Please note that this repository is incomplete and requires revision.
 ```
-testing
 
-## Repository Contents
-
-- `notebooks`: folder containing draft notebooks with modeling process
-    - `d_tree_model.ipynb`: draft notebook for decision tree and random forest model iteration
-    - `log_reg_model-BASELINE & BALANCED.ipynb`: draft notebook for baseline & balanced logistic regression model iterations
-    - `log_reg_model-SMOTE.ipynb`: draft notebook for logistic regression model using SMOTE for class imbalance
-- `visualizations`: folder containing all visualzations generated in `eda_notebook.ipynb`
-- `.ipynb_checkpoints`: folder containing Jupyter Notebook checkpoints, can disregard
-- `eda_notebook.ipynb`: notebook with exploratory data analysis (EDA) process
-- `business_insights`: notebook with final visualizations that answer the business problems
-- `final_model.ipynb`: notebook with modeling process for final model that recieved the highest evaluation metric
-- `online_shoppers_intention.csv`: .csv file with original research data from UCI
-- `model_data.csv`: .csv file with data cleaned within `eda_notebook.ipynb`
-- `presentation.pdf`: .pdf wil project presentation
-- `README.md`: markdown file to display README on repository
+![banner](./visualizations/banner.png)
 
 ## Overview
 
-The `online_shoppers_intention.csv` includes 12,330 sessions of online traffic to an unknown website over the period of a year. The column 'Revenue' contains a True or False value that displays whether or not a website viewer purchases the product. This serves as the target variable for the clasification problem. Using the other columns provided, we can create a classification model that can predict whether a site visitor will purhase the product. The company can use this model for future use.
+The `online_shoppers_intention.csv` includes 12,330 sessions of online traffic to an unknown website over the period of a year. The column 'Revenue' contains a True or False value that displays whether or not a website viewer purchases the product. This serves as the target variable for the classification problem. Using the other columns provided, we can create a classification model that can predict whether a site visitor will purchase the product. The company can use this model for future use.
 
-The primary evaluation metric will be Recall because it indicates the amount of true positives that the model predicts. In this business context, false negatives are intolerable because that would inaccurately represent sales. We will also be looking at F1 score and AUC score because they have a direct relationship with Recall; espeically AUC as it predicts the probability of true positives.
+The primary evaluation metric will be Recall because it indicates the amount of true positives that the model predicts. In this business context, false negatives are intolerable because that would inaccurately represent sales. We will also be looking at F1 score and AUC score because they have a direct relationship with Recall; especially AUC as it predicts the probability of true positives.
 
 ## Primary Business Problem
 
@@ -33,7 +18,7 @@ The primary evaluation metric will be Recall because it indicates the amount of 
 
 ![class](/visualizations/class_imbalance.png)
 
-From the distrbution of 'Revenue' in this dataset, it's clear that 85% of people who visited the website that year did not convert to a customer. To solve this problem, we'll investigate what factors impact this decision.
+From the distribution of 'Revenue' in this dataset, it's clear that 85% of people who visited the website that year did not convert to a customer. To solve this problem, we'll investigate what factors impact this decision.
 
 ## Business Questions
 
@@ -94,3 +79,51 @@ We tried performing grid search with cross validation to optimize other hyperpar
 - Collect more data, but include a legend for categorical variables to promote interpretability.
 - Webscrape similar data from other e-commerce stores within the industry to see how the model performs with that blind data.
 - A/B Testing the web design of the prominence of Adminisrative and Informational page links to increase length of user session.
+
+## Repository Contents
+
+- `notebooks`: folder containing draft notebooks with modeling process
+    - `d_tree_model.ipynb`: draft notebook for decision tree and random forest model iteration
+    - `log_reg_model-BASELINE & BALANCED.ipynb`: draft notebook for baseline & balanced logistic regression model iterations
+    - `log_reg_model-SMOTE.ipynb`: draft notebook for logistic regression model using SMOTE for class imbalance
+- `visualizations`: folder containing all visualzations generated in `eda_notebook.ipynb`
+- `.ipynb_checkpoints`: folder containing Jupyter Notebook checkpoints, can disregard
+- `eda_notebook.ipynb`: notebook with exploratory data analysis (EDA) process
+- `business_insights`: notebook with final visualizations that answer the business problems
+- `final_model.ipynb`: notebook with modeling process for final model that recieved the highest evaluation metric
+- `online_shoppers_intention.csv`: .csv file with original research data from UCI
+- `model_data.csv`: .csv file with data cleaned within `eda_notebook.ipynb`
+- `presentation.pdf`: .pdf wil project presentation
+- `README.md`: markdown file to display README on repository
+
+```bash
+.
+├── models                             # contains model iterations
+├── pickle                             # contains cleaned data
+│   └── final_linear_SVM.pkl           # pickled final model
+├── preprocessing                      # contains all data preperation iterations and EDA notebooks
+│   ├── data_cleaning.ipynb            # raw data cleaning notebook
+│   ├── eda_notebook.ipynb             # exploratory data analysis notebook
+│   └── nlp_preprocessing.ipynb        # feature engineering notebook
+├── src                                # source folder
+│   └── twitter_data.csv               # raw dataset
+├── visualizations                     # contains visualizations and local images
+├── README.md                          # public-facing preview
+├── final_notebook.ipynb               # final version of EDA, feature engineering and modeling process
+├── presentation.pdf                   # slide deck
+└── web_app.py                         # interactive dashboard to host project
+
+
+```
+
+## For More Information
+
+- See the [full project overview](https://github.com/sidneykung/twitter_hate_speech_detection/blob/master/final_notebook.ipynb) in the `final_notebook.ipynb` Jupyter Notebook.
+
+- For additional information or suggestions, contact Sidney Kung at [sidneyjkung@gmail.com](mailto:sidneyjkung@gmail.com)
+
+**Let's connect!**
+
+- [LinkedIn](https://www.linkedin.com/in/sidneykung/)
+
+- [Twitter](https://twitter.com/sidney_k98)
