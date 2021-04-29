@@ -8,7 +8,7 @@ Please note that this repository is incomplete and requires revision.
 
 ## Overview
 
-The `online_shoppers_intention.csv` includes 12,330 sessions of online traffic to an unknown website over the period of a year. The column 'Revenue' contains a True or False value that displays whether or not a website viewer purchases the product. This serves as the target variable for the classification problem. Using the other columns provided, we can create a classification model that can predict whether a site visitor will purchase the product. The company can use this model for future use.
+The `online_shoppers_intention.csv` includes 12,330 sessions of online traffic to an unknown website over the period of a year. The column `Revenue` contains a True or False value that displays whether or not a website viewer purchases the product. This serves as the target variable for the classification problem. Using the other columns provided, we can create a classification model that can predict whether a site visitor will purchase the product. The company can use this model for future use.
 
 The primary evaluation metric will be Recall because it indicates the amount of true positives that the model predicts. In this business context, false negatives are intolerable because that would inaccurately represent sales. We will also be looking at F1 score and AUC score because they have a direct relationship with Recall; especially AUC as it predicts the probability of true positives.
 
@@ -18,7 +18,7 @@ The primary evaluation metric will be Recall because it indicates the amount of 
 
 ![class](/visualizations/class_imbalance.png)
 
-From the distribution of 'Revenue' in this dataset, it's clear that 85% of people who visited the website that year did not convert to a customer. To solve this problem, we'll investigate what factors impact this decision.
+From the distribution of `Revenue` in this dataset, it's clear that 85% of people who visited the website that year did not convert to a customer. To solve this problem, we'll investigate what factors impact this decision.
 
 ## Business Questions
 
@@ -30,7 +30,7 @@ From the distribution of 'Revenue' in this dataset, it's clear that 85% of peopl
 
 This project uses the [Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset#) from the UCI Machine Learning Repository.
 
-The research study gathered data from each session of website traffic over the 1-year period. The 'Revenue' column was used as the target variable in this classification project. Below is a description of each column in the original dataset.
+The research study gathered data from each session of website traffic over the 1-year period. The `Revenue` column was used as the target variable in this classification project. Below is a description of each column in the original dataset.
 
 | Column Name | Description |
 |-|-|
