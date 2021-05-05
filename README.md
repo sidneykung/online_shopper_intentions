@@ -12,7 +12,7 @@ The `online_shoppers_intention.csv` includes 12,330 sessions of online traffic t
 
 The primary evaluation metric will be Recall because it indicates the amount of true positives that the model predicts. In this business context, false negatives are intolerable because that would inaccurately represent sales. We will also be looking at F1 score and AUC score because they have a direct relationship with Recall; especially AUC as it predicts the probability of true positives.
 
-## Primary Business Problem
+## Business Problem
 
 **What are the areas of opportunity to increase conversion among people who visit the website?**
 
