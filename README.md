@@ -59,8 +59,6 @@ The research study gathered data from each session of website traffic over the 1
 
 - Promote the site during these peak months, focusing on spring up until early summer.
 
-![visitors](./visualizations/visitor_types.png)
-
 - Because a majority of purchasers are returning visitors, focus advertising efforts towards people who have already viewed the site to encourage them to return and convert to a customer.
 
 ![revenue](./visualizations/target_correlation.png)
